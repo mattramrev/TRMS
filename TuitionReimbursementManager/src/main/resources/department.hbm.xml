@@ -1,0 +1,12 @@
+<hibernate-mapping>
+    <class name="TRMS.models.Department" table="departments">
+        <id name="id" type="int" column="departmentID">
+            <generator class="identity"/>
+        </id>
+
+        <property name="depname" type="string" column="depname" />
+
+
+    </class>
+
+</hibernate-mapping>

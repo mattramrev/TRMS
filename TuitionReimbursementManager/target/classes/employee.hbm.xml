@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name="TRMS.models.Employee" table="employees">
+        <id name="id" type="int" column="employeeID">
+            <generator class="identity"/>
+        </id>
+        <property name="depID" type="int" column="depID"/>
+        <property name="superID" type="int" column="superID" />
+        <property name="acctName" type="string" column="acctName"/>
+        <property name="acctPass" type="string" column="acctPass"/>
+        <property name="title" type="string" column="position"/>
+        <property name="eventID" type="int" column="eventID"/>
+        <property name="reimbursementAcctAmt" type="int" column="reimbursementAcctAmt"/>
+        <property name="email" type="string" column="email"/>
+
+    </class>
+
+</hibernate-mapping>

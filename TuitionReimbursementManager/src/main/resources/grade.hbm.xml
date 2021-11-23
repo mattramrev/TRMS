@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name="TRMS.models.Grade" table="grades">
+        <id name="eventID" type="int" column="eventID">
+            <generator class="identity"/>
+        </id>
+
+        <property name="gradeFormat" type="int" column="gradeFormat"/>
+        <property name="presentation" type="boolean" column="presentation"/>
+        <property name="grade" type="string" column="grade"/>
+        <property name="presentationFile" type="string" column="presentationFile"/>
+
+    </class>
+
+</hibernate-mapping>

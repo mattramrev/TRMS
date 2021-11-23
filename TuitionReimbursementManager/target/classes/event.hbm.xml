@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="TRMS.models.Event" table="events">
+        <id name="eventID" type="int" column="eventID">
+            <generator class="identity"/>
+        </id>
+
+        <property name="eventType" type="int" column="eventTypeID"/>
+        <property name="price" type="int" column="eventCost"/>
+        <property name="location" type="string" column="location"/>
+        <property name="description" type="string" column="description"/>
+        <property name="reason" type="string" column="reason"/>
+        <property name="grade" type="int" column="grade"/>
+        <property name="finishTime" type="long" column="finishT"/>
+        <property name="superApproval" type="boolean" column="superApproval"/>
+        <property name="depHeadApproval" type="boolean" column="depHeadApproval"/>
+        <property name="benCoApproval" type="boolean" column="benCoApproval"/>
+
+    </class>
+
+</hibernate-mapping>
